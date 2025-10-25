@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-sky-50 text-slate-900;
+        /* Changed to light sky blue background and dark text */
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+}
+
+@layer utilities {
+    .gradient-text {
+        @apply bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 bg-clip-text text-transparent;
+        /* Adjusted for better contrast on light background */
+    }
+
+    .gradient-border {
+        @apply relative before:absolute before:inset-0 before:rounded-lg before:p-[2px] before:bg-gradient-to-r before:from-blue-600 before:via-cyan-600 before:to-teal-600 before:-z-10;
+        /* Adjusted for better contrast on light background */
+    }
+}
