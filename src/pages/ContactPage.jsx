@@ -36,8 +36,8 @@ const ContactPage = () => {
         {
             icon: Mail,
             title: 'Email',
-            details: 'info@danasys.in',
-            link: 'mailto:info@danasys.in'
+            details: 'contact@danasys.in',
+            link: 'mailto:contact@danasys.in'
         },
         {
             icon: Phone,
@@ -48,7 +48,7 @@ const ContactPage = () => {
         {
             icon: MapPin,
             title: 'Office',
-            details: 'B-275, Paramount Golfforeste, Greater Noida, UP, India',
+            details: '819A, Oak Business Tower, Paramount Golfforeste, Greater Noida, UP, India 201306',
             link: '#'
         }
     ];
@@ -149,7 +149,7 @@ const ContactPage = () => {
                                             onChange={handleChange}
                                             required
                                             className="w-full px-4 py-3 bg-blue-100/50 border border-blue-200 rounded-lg focus:outline-none focus:border-cyan-600 transition-colors text-slate-900" /* Adjusted input style for light theme */
-                                            placeholder="john@example.com"
+                                            placeholder="contact@danasys.in"
                                         />
                                     </div>
                                 </div>
@@ -181,7 +181,7 @@ const ContactPage = () => {
                                             value={formData.company}
                                             onChange={handleChange}
                                             className="w-full px-4 py-3 bg-blue-100/50 border border-blue-200 rounded-lg focus:outline-none focus:border-cyan-600 transition-colors text-slate-900" /* Adjusted input style for light theme */
-                                            placeholder="Your Company"
+                                            placeholder="Danasys Consultancy Services"
                                         />
                                     </div>
                                 </div>

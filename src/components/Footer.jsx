@@ -95,7 +95,7 @@ const Footer = () => {
                         <ul className="space-y-3">
                             <li className="flex items-start space-x-3 text-slate-700"> {/* Changed text color */}
                                 <Mail className="h-5 w-5 mt-0.5 flex-shrink-0 text-cyan-600" /> {/* Adjusted icon color */}
-                                <span>info@danasys.com</span>
+                                <span>contact@danasys.in</span>
                             </li>
                             <li className="flex items-start space-x-3 text-slate-700"> {/* Changed text color */}
                                 <Phone className="h-5 w-5 mt-0.5 flex-shrink-0 text-cyan-600" /> {/* Adjusted icon color */}
@@ -103,7 +103,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-start space-x-3 text-slate-700"> {/* Changed text color */}
                                 <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0 text-cyan-600" /> {/* Adjusted icon color */}
-                                <span>123 Tech Street, Silicon Valley, CA 94025</span>
+                                <span>819A, Oak Business Tower, Paramount Golfforeste, Greater Noida, UP, India 201306</span>
                             </li>
                         </ul>
                     </div>
