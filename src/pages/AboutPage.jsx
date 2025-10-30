@@ -4,11 +4,12 @@ import { motion } from 'framer-motion';
 import { Target, Eye, Award, Users } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import nehaImg from "../assets/images/neha.jpeg";
+import nehaImg from "../assets/images/neha-2.jpg";
 import kishanpalImg from "../assets/images/keshav.jpeg";
-import spImg from "../assets/images/sp.png";
+import spImg from "../assets/images/sp.jpg";
 import piyushImg from "../assets/images/piyush.png";
 import niteshImg from "../assets/images/nitesh.png";
+import divyaImg from "../assets/images/divya.png";
 
 const AboutPage = () => {
     const values = [
@@ -37,9 +38,10 @@ const AboutPage = () => {
     const team = [
         { name: 'Neha Y', role: 'CEO & Founder', image: nehaImg },
         { name: 'SP Mishra', role: 'CTO  & Director', image: spImg },
-        { name: 'Kishanpal', role: 'COO & Director', image: kishanpalImg },
+        { name: 'Kishan Pal', role: 'COO & Director', image: kishanpalImg },
+        { name: 'Divya G', role: 'HR Head', image: divyaImg },
         { name: 'Piyush Sharma', role: 'Tech Lead', image: piyushImg },
-        { name: 'Nitesh Thankur', role: 'UI Lead', image: niteshImg }
+        { name: 'Nitesh Thakur', role: 'UI Lead', image: niteshImg }
     ];
 
     return (
