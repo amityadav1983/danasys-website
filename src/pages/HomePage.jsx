@@ -42,10 +42,10 @@ const HomePage = () => {
     ];
 
     const stats = [
-        { number: '150+', label: 'Projects Delivered' },
-        { number: '50+', label: 'Happy Clients' },
-        { number: '8+', label: 'Years Experience' },
-        { number: '25+', label: 'Team Members' }
+        { number: '5+', label: 'Projects Delivered' },
+        { number: '13+', label: 'Happy Clients' },
+        { number: '2+', label: 'Years Experience' },
+        { number: '15+', label: 'Team Members' }
     ];
 
     return (

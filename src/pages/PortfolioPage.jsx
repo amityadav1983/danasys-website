@@ -6,6 +6,12 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Button } from '../components/ui/button';
 import { useToast } from '../components/ui/use-toast';
+import c2cImg from "../assets/images/c2c.jpg";
+import healthImg from "../assets/images/health.png";
+import financeImg from "../assets/images/finance.png";
+import fitnessImg from "../assets/images/fitness.png";
+import cloudeImg from "../assets/images/cloude.png";
+import chatImg from "../assets/images/chat.png";
 
 const PortfolioPage = () => {
     const { toast } = useToast();
@@ -16,42 +22,42 @@ const PortfolioPage = () => {
             title: 'E-Commerce Platform',
             category: 'web',
             description: 'Full-featured online shopping platform with payment integration',
-            image: 'Modern e-commerce website interface with shopping cart',
-            tech: ['React', 'Node.js', 'MongoDB']
+            image: c2cImg,
+            tech: ['React', 'Node.js', 'MongoDB', 'JAVA']
         },
         {
             title: 'Healthcare Mobile App',
             category: 'mobile',
             description: 'Patient management and telemedicine application',
-            image: 'Healthcare mobile app interface on smartphone',
+            image: healthImg,
             tech: ['React Native', 'Firebase', 'AWS']
         },
         {
             title: 'Financial Dashboard',
             category: 'web',
             description: 'Real-time analytics and reporting dashboard',
-            image: 'Financial analytics dashboard with charts and graphs',
+            image: financeImg,
             tech: ['Vue.js', 'Python', 'PostgreSQL']
         },
         {
             title: 'Fitness Tracking App',
             category: 'mobile',
             description: 'Comprehensive fitness and nutrition tracking solution',
-            image: 'Fitness tracking mobile application interface',
+            image: fitnessImg,
             tech: ['Flutter', 'GraphQL', 'Docker']
         },
         {
             title: 'Cloud Migration',
             category: 'cloud',
             description: 'Enterprise infrastructure migration to AWS',
-            image: 'Cloud infrastructure architecture diagram',
+            image: cloudeImg,
             tech: ['AWS', 'Kubernetes', 'Terraform']
         },
         {
             title: 'AI Chatbot Platform',
             category: 'ai',
             description: 'Intelligent customer service automation',
-            image: 'AI chatbot interface with conversation flow',
+            image: chatImg,
             tech: ['Python', 'TensorFlow', 'NLP']
         }
     ];
@@ -137,7 +143,7 @@ const PortfolioPage = () => {
                                     onClick={handleProjectClick}
                                 >
                                     <div className="relative overflow-hidden">
-                                        <img alt={project.title} className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" src="https://images.unsplash.com/photo-1572177812156-58036aae439c" />
+                                        <img alt={project.title} className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" src={project.image} />
                                         <div className="absolute inset-0 bg-gradient-to-t from-sky-50 via-sky-50/50 to-transparent opacity-60" /> {/* Adjusted gradient for light theme */}
                                         <div className="absolute top-4 right-4 bg-white/80 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity"> {/* Adjusted background for light theme */}
                                             <ExternalLink className="h-5 w-5 text-cyan-600" /> {/* Adjusted icon color */}

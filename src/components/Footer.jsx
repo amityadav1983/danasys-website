@@ -39,7 +39,7 @@ const Footer = () => {
                             <span className="text-xl font-bold gradient-text">Danasys</span>
                         </div>
                         <p className="text-slate-700 mb-4"> {/* Changed text color */}
-                            Transforming businesses through innovative technology solutions since 2017.
+                            Transforming businesses through innovative technology solutions since 2024.
                         </p>
                         <div className="flex space-x-4">
                             {footerLinks.social.map((social, index) => (
@@ -99,7 +99,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-start space-x-3 text-slate-700"> {/* Changed text color */}
                                 <Phone className="h-5 w-5 mt-0.5 flex-shrink-0 text-cyan-600" /> {/* Adjusted icon color */}
-                                <span>+1 (555) 123-4567</span>
+                                <span>+91 9311393193</span>
                             </li>
                             <li className="flex items-start space-x-3 text-slate-700"> {/* Changed text color */}
                                 <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0 text-cyan-600" /> {/* Adjusted icon color */}

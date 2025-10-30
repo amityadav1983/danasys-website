@@ -4,6 +4,11 @@ import { motion } from 'framer-motion';
 import { Target, Eye, Award, Users } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import nehaImg from "../assets/images/neha.jpeg";
+import kishanpalImg from "../assets/images/keshav.jpeg";
+import spImg from "../assets/images/sp.png";
+import piyushImg from "../assets/images/piyush.png";
+import niteshImg from "../assets/images/nitesh.png";
 
 const AboutPage = () => {
     const values = [
@@ -30,10 +35,11 @@ const AboutPage = () => {
     ];
 
     const team = [
-        { name: 'Sarah Johnson', role: 'CEO & Founder', image: 'Professional CEO portrait in modern office' },
-        { name: 'Michael Chen', role: 'CTO', image: 'Technology executive in tech workspace' },
-        { name: 'Emily Rodriguez', role: 'Head of Design', image: 'Creative director at design studio' },
-        { name: 'David Kumar', role: 'Lead Developer', image: 'Senior software engineer coding' }
+        { name: 'Neha Y', role: 'CEO & Founder', image: nehaImg },
+        { name: 'SP Mishra', role: 'CTO  & Director', image: spImg },
+        { name: 'Kishanpal', role: 'COO & Director', image: kishanpalImg },
+        { name: 'Piyush Sharma', role: 'Tech Lead', image: piyushImg },
+        { name: 'Nitesh Thankur', role: 'UI Lead', image: niteshImg }
     ];
 
     return (
@@ -59,12 +65,12 @@ const AboutPage = () => {
                                     About <span className="gradient-text">Danasys</span>
                                 </h1>
                                 <p className="text-xl text-slate-700 mb-6 leading-relaxed"> {/* Changed text color */}
-                                    Founded in 2017, Danasys Consultancy Services has been at the forefront of digital innovation,
+                                    Founded in 2024, Danasys Consultancy Services has been at the forefront of digital innovation,
                                     helping businesses transform their operations through cutting-edge technology solutions.
                                 </p>
                                 <p className="text-lg text-slate-700 leading-relaxed"> {/* Changed text color */}
-                                    With over 8 years of experience and a team of 25+ dedicated professionals, we've successfully
-                                    delivered 150+ projects across various industries, earning the trust of 50+ satisfied clients worldwide.
+                                    With over 2 years of experience and a team of 15+ dedicated professionals, we've successfully
+                                    delivered 5+ projects across various industries, earning the trust of 13+ satisfied clients worldwide.
                                 </p>
                             </motion.div>
 
@@ -181,7 +187,7 @@ const AboutPage = () => {
                                     className="group"
                                 >
                                     <div className="relative overflow-hidden rounded-xl mb-4">
-                                        <img alt={`${member.name} - ${member.role}`} className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300" src="https://images.unsplash.com/photo-1595872018818-97555653a011" />
+                                        <img alt={`${member.name} - ${member.role}`} className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300" src={member.image} />
                                         <div className="absolute inset-0 bg-gradient-to-t from-sky-50 via-transparent to-transparent opacity-60" /> {/* Adjusted gradient for light theme */}
                                     </div>
                                     <h3 className="text-xl font-semibold mb-1 text-slate-900">{member.name}</h3> {/* Changed text color */}
